@@ -1,0 +1,173 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.logo{
+    margin-left: 15px;
+}
+
+.active {
+    background-color: #6d4db8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+
+.main-content {
+    margin-top: 60px; /* Adjust based on header height */
+    height: calc(100% - 60px); /* Full height minus header */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.dropdown-menu {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.dropdown-menu li {
+   list-style: none;
+   margin-bottom: 10px;
+}
+
+.dropdown-menu a {
+   text-decoration: none;
+   color: #000;
+}
+
+.dropdown-menu a:hover {
+   text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+nav li {
+   margin-right: 20px;
+}
+
+nav a {
+   text-decoration: none;
+   color: #000;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+.banner {
+    margin-top: 25px;
+    background-color: #6A0DAD;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1 {
+    margin: 0;
+    font-size: 28px;
+}
+.banner-image {
+ 
+    width: 200px;
+    height: 100px;
+    margin-right: 100px;
+    background-image: url(./banner.png);
+    background-size: 210px;
+    background-repeat: no-repeat;
+
+}
+
+.hom{
+    color:#616059;
+}
+
+
+
+.content {
+    padding-left: 150px;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden; 
+}
+.filters {
+    width: 250px;
+    padding: 20px;
+    overflow-y: auto; 
+}
+.job-list-container {
+    padding-right: 150px;
+    padding-left: 20px;
+    flex-grow: 1;
+    overflow-y: auto; 
+    
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.job-card {
+    background-color: #FFF9C4;
+    border: 1px solid #f7f3e6;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.job-card h3 {
+    margin-top: 0;
+}
+.job-card ul {
+    padding-left: 20px;
+}
+.apply-button {
+    background-color: #00A5EC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.guaranteed-placement {
+    color: #00A5EC;
+    text-decoration: none;
+    float: right;
+}
+
+.home{
+    text-decoration: none;
+}  
